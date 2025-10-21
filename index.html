@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Имя Фамилия — сайт‑визитка</title>
+  <meta name="description" content="Коротко о вас: чем занимаетесь, кому помогаете." />
+
+  <!-- Иконка вкладки -->
+  <link rel="icon" href="img/avatar.jpg" type="image/png" />
+
+  <!-- Базовые стили -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Open Graph для красивой ссылки в соцсетях -->
+  <meta property="og:title" content="Имя Фамилия — сайт‑визитка" />
+  <meta property="og:description" content="Коротко о вас." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/avatar.jpg" />
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="На главную">ИФ</a>
+      <nav class="nav" aria-label="Главная навигация">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Меню</button>
+        <ul id="menu" class="menu">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Герой‑блок -->
+  <section id="hero" class="hero" aria-label="Главный блок">
+    <div class="container hero-inner">
+      <img class="avatar" src="avatar.jpg" alt="Фото: Имя Фамилия" />
+      <div class="hero-text">
+        <h1>Имя Фамилия</h1>
+        <p class="lead">Ваша роль: <strong>веб‑разработчик / преподаватель / дизайнер</strong>.</p>
+        <p>Помогаю бизнесу запускать быстрые и понятные сайты. Работаю с HTML, CSS, JS.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Связаться</a>
+          <a class="btn outline" href="#projects">Смотреть проекты</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Обо мне -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Обо мне</h2>
+        <p>Короткий абзац: опыт, сильные стороны, чем полезны клиенту. 3–5 предложений.</p>
+        <ul class="checklist">
+          <li>Опыт: 5+ лет в веб‑разработке</li>
+          <li>Фокус: посадочные, лэндинги, визитки</li>
+          <li>Инструменты: HTML, CSS, JavaScript</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Ключевые факты</h3>
+        <dl class="facts">
+          <dt>Город</dt><dd>Павлодар</dd>
+          <dt>Занятость</dt><dd>Фриланс / частичная</dd>
+          <dt>Ответ за</dt><dd>Сроки и качество</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="section alt">
+    <div class="container">
+      <h2>Услуги</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Сайт‑визитка</h3>
+          <p>Одностраничный сайт под ключ за 3–5 дней.</p>
+        </article>
+        <article class="card">
+          <h3>Лэндинг</h3>
+          <p>Конверсионная страница для одного продукта/услуги.</p>
+        </article>
+        <article class="card">
+          <h3>Поддержка</h3>
+          <p>Мелкие правки, оптимизация, скорость, SEO‑база.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Проекты -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Проекты</h2>
+      <div class="projects">
+        <a class="project" href="#" aria-label="Проект 1 (откроется в новой вкладке)" target="_blank" rel="noopener">Проект 1</a>
+        <a class="project" href="#" target="_blank" rel="noopener">Проект 2</a>
+        <a class="project" href="#" target="_blank" rel="noopener">Проект 3</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="section alt">
+    <div class="container grid-2">
+      <div>
+        <h2>Контакты</h2>
+        <p>Опишите, как с вами лучше связаться. Укажите время ответа.</p>
+        <ul class="list">
+          <li>✉️ <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>📱 <a href="tel:+77001234567">+7 700 123‑45‑67</a></li>
+          <li>💬 Telegram: <a href="https://t.me/yourusername" target="_blank" rel="noopener">@yourusername</a></li>
+        </ul>
+      </div>
+      <form class="card contact-form" action="#" method="post" aria-label="Форма обратной связи">
+        <label>
+          <span>Ваше имя</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Сообщение</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Отправить</button>
+        <p class="form-note">Отправка демо‑формы работает только на стороне клиента (без сервера).</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Имя Фамилия. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
